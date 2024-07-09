@@ -9,7 +9,10 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: [
+    'http://localhost:3000',
+    'https://techforing-task-1-shourov-saha.vercel.app',
+  ],
 };
 
 app.use(cors(corsOptions));
